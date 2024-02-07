@@ -1,5 +1,7 @@
 package edu.mu.Student;
 
+import java.util.Objects;
+
 public class Student {
 	//variables
 	private int id;
@@ -40,7 +42,8 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", grade=" + grade + "]";
+		return "Student [id: " + id + ", name: " + name + ", grade: " + grade + "]";
 	}
 	
+
 }
