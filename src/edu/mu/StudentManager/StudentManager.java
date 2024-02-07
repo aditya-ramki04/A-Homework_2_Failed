@@ -26,11 +26,13 @@ public class StudentManager {
 	public boolean searchStudentById(int id)
 	{
 		//runs through the student array with the length
-		//determines if the s
+		//uses an if statement to determine if the student's id is 
+		//equal to the id in the parameter
+		//if it does match, it prints out the information of the student
+		//and if it doesn't, prints an error message.
 		for(int i=0; i<students.length; i++)
 		{
-			//if(students[i].getId() == id)
-			if(equals(students))
+			if(students[i].getId() == id)
 			{
 				System.out.println
 				("Student was found! Student ID: " + students[i].getId() 
@@ -44,7 +46,7 @@ public class StudentManager {
 			return false;
 	}
 
-
+ 
 
 	public static void main(String[] args) {
 		//Instance of StudentManager construct
@@ -58,6 +60,7 @@ public class StudentManager {
 		
 		//allows us to display student details & initializes the students array
 		Manager.displayStudents();
+		Manager.searchStudentById(102);
 		
 		
 	}
