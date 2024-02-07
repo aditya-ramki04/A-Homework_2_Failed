@@ -23,7 +23,27 @@ public class StudentManager {
 		}
 	}
 	
-	
+	public boolean searchStudentById(int id)
+	{
+		//runs through the student array with the length
+		//determines if the s
+		for(int i=0; i<students.length; i++)
+		{
+			//if(students[i].getId() == id)
+			if(equals(students))
+			{
+				System.out.println
+				("Student was found! Student ID: " + students[i].getId() 
+				+ ". Stud ent Name: " + students[i].getName()
+				+ ". Student Grade: " + students[i].getGrade());
+				return true;
+			}
+			
+		}
+			System.out.println("The student was not found. Please try again!");
+			return false;
+	}
+
 
 
 	public static void main(String[] args) {
