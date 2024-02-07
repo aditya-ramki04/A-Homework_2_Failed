@@ -1,5 +1,7 @@
 package edu.mu.Student;
 
+import java.util.Objects;
+
 public class Student {
 	//variables
 	private int id;
@@ -43,4 +45,26 @@ public class Student {
 		return "Student [id: " + id + ", name: " + name + ", grade: " + grade + "]";
 	}
 	
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		return id == other.id;
+	}
+
+//	public boolean equals(Object obj, int id) 
+//	{
+//		Student s1 = ((Student)obj);
+//		if(id == s1.getId())
+//		{
+//			return true;
+//		}
+//		return false;
+//	}
 }
