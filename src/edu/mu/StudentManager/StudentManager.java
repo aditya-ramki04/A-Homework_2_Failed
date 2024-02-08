@@ -12,6 +12,7 @@ public class StudentManager {
 		//equal to the id in the parameter
 		//if it does match, it prints out the information of the student
 		//and if it doesn't, prints an error message.
+		//Matthew Robison wrote this function
 		for(int i=0; i<students.length; i++)
 		{
 			if(students[i].getId() == id)
