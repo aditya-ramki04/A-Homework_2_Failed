@@ -45,9 +45,11 @@ public class StudentManager {
 			return false;
 	}
 	
+	//Aditya
 	public boolean updateStudentGradeById(int id, double grade) {
 		
 		if(searchStudentById(id)) {
+			//loops through student array, finds student with id, and sets their grade
 			for(int i=0; i<students.length; i++)
 			{
 				if(students[i].getId() == id)
